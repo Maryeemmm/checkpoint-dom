@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panier de Shopping</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="notification" id="notification"></div> 
+
+  <h1>🛒 Panier</h1> 
+  <div class="shopping-cart">
+    <div class="cart-item" data-price="20">
+      <img src="cart-01.jpg" alt="Crème hydrante" class="product-img">
+      <div class="product-info">
+        <h3>Crème hydrante</h3>
+        <p>Prix unitaire: <span class="item-price">20</span>€</p>
+        <div class="quantity-control">
+          <button class="decrease">-</button>
+          <input type="number" class="quantity" value="1" min="1">
+          <button class="increase">+</button>
+        </div>
+        <button class="delete-item">Supprimer</button>
+        <button class="like-item">&#9829;</button>
+      </div>
+    </div>
+
+    <div class="cart-item" data-price="15">
+      <img src="cart-02.jpg" alt="Serum" class="product-img">
+      <div class="product-info">
+        <h3>Serum</h3>
+        <p>Prix unitaire: <span class="item-price">15</span>€</p>
+        <div class="quantity-control">
+          <button class="decrease">-</button>
+          <input type="number" class="quantity" value="1" min="1">
+          <button class="increase">+</button>
+        </div>
+        <button class="delete-item">Supprimer</button>
+        <button class="like-item">&#9829;</button>
+      </div>
+    </div>
+
+    <h3>Total: <span id="total-price">35</span>€</h3>
+    <button id="validate-cart">Valider le panier</button> 
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
